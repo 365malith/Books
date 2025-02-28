@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cinnamon</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="hoteldetail.css" />
+</head>
+<body>
+ <!-- Container with Background Color -->
+ <div class="container-fluid py-3" style="background-color: #a91c4c;">
+    <div class="d-flex justify-content-between align-items-center p-3">
+        <!-- Logo -->
+        <img src="img/Assets/Book_Sri_Lanka.net_Logo.jpeg" alt="Logo" style="height: 200px; width: auto;">
+       
+        <!-- Toggle Button -->
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="menuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                ☰ Menu
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuButton">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>  
+<div class="container mt-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb p-3 rounded shadow-lg" style="background-color: #f8f9fa;">
+            <li class="breadcrumb-item">
+                <a href="index.html" class="breadcrumb-link">
+                    <i class="bi bi-house-door-fill"></i> Home
+                </a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="stay.html" class="breadcrumb-link">
+                    <i class="bi bi-building"></i> Hotels
+                </a>
+            </li>
+            <li class="breadcrumb-item active breadcrumb-active" aria-current="page">
+                <i class="bi bi-geo-alt-fill"></i> Cinnamon life 
+            </li>
+        </ol>
+    </nav>
+</div>
+
+
+  <!-- Image Carousel / Gallery -->
+  <div class="container my-4">
+    <div id="hotelCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/Assets/Cinnamon Life/bedroom_King.jpg" class="d-block w-100" alt="Hotel Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/Assets/Cinnamon Life/Outside.jpg" class="d-block w-100" alt="Hotel Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/Assets/Cinnamon Life/inside1.jpg" class="d-block w-100" alt="Hotel Image 3">
+        </div>
+        <div class="carousel-item">
+          <img src="img/Assets/Cinnamon Life/Room Suite.jpg" class="d-block w-100" alt="Hotel Image 3">
+        </div>
+        <div class="carousel-item">
+          <img src="img/Assets/Cinnamon Life/bedroom_twin.jpg" class="d-block w-100" alt="Hotel Image 3">
+        </div>
+        <div class="carousel-item">
+          <img src="img/Assets/Cinnamon Life/pool.jpg" class="d-block w-100" alt="Hotel Image 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+        <!-- Left Side: Tab Content -->
+        <div class="col-lg-8">
+            <div class="p-3 border rounded shadow-lg" style="background-color: #a91c4c; color: white;">
+                <!-- Tab Navigation -->
+                <ul class="nav nav-pills nav-justified mb-3">
+                    <li class="nav-item">
+                        <a class="btn btn-warning w-100" data-bs-toggle="tab" href="#overview-pane"><i class="bi bi-info-circle"></i> Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning w-99" data-bs-toggle="tab" href="#rooms-pane"><i class="bi bi-house-door"></i> Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning w-99" data-bs-toggle="tab" href="#reviews-pane"><i class="bi bi-chat-left-dots"></i> Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning w-100" data-bs-toggle="tab" href="#map-pane"><i class="bi bi-map"></i> Location</a>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content p-3">
+                    <!-- Overview Tab -->
+                    <div class="tab-pane fade show active" id="overview-pane">
+                        <h5><i class="bi bi-info-circle"></i> Overview</h5>
+                        <p>Experience the perfect stay at our luxurious hotel, offering breathtaking views, modern amenities, and world-class hospitality. Our prime location ensures easy access to top attractions, shopping, and dining experiences.</p>
+                    </div>
+
+                    <!-- Rooms Tab with Carousel -->
+                    <div class="tab-pane fade" id="rooms-pane">
+                        <h5><i class="bi bi-house-door"></i> Room Details</h5>
+                        <div id="roomCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/Assets/Cinnamon Life/Room Suite.jpg" class="d-block w-100 rounded" alt="Standard Room">
+                                    <p><strong>Standard Room:</strong> Cozy and comfortable with all essential amenities. ($120 per night)</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Assets/Cinnamon Life/bedroom_twin.jpg" class="d-block w-100 rounded" alt="Deluxe Room">
+                                    <p><strong>Deluxe Room:</strong> Spacious with stunning views and premium facilities. ($150 per night)</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Assets/Cinnamon Life/bedroom_King.jpg" class="d-block w-100 rounded" alt="Suite">
+                                    <p><strong>Suite:</strong> Ultimate luxury with separate living space and exclusive services. ($200 per night)</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Assets/Cinnamon Life/Room Suite.jpg" class="d-block w-100 rounded" alt="Executive Room">
+                                    <p><strong>Executive Room:</strong> Business-class comfort with workspace and lounge. ($180 per night)</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Assets/Cinnamon Life/inside1.jpg" class="d-block w-100 rounded" alt="Penthouse">
+                                    <p><strong>Penthouse:</strong> The pinnacle of luxury, private terrace, and stunning views. ($350 per night)</p>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#roomCarousel" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#roomCarousel" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Reviews Tab with Carousel -->
+                    <div class="tab-pane fade" id="reviews-pane">
+                        <h5><i class="bi bi-chat-left-dots"></i> Customer Reviews</h5>
+                        <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="border rounded p-3" style="border-color: #a91c4c;">
+                                        <p><strong>Jane D.</strong> ⭐⭐⭐⭐⭐ "The best hotel experience ever! The staff was friendly, and the rooms were fantastic."</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="border rounded p-3" style="border-color: #a91c4c;">
+                                        <p><strong>Mike S.</strong> ⭐⭐⭐⭐ "Great location and excellent service. Highly recommended!"</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="border rounded p-3" style="border-color: #a91c4c;">
+                                        <p><strong>Anna K.</strong> ⭐⭐⭐⭐⭐ "Wonderful experience! The food, the view, everything was perfect!"</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="border rounded p-3" style="border-color: #a91c4c;">
+                                        <p><strong>Tom B.</strong> ⭐⭐⭐⭐ "Good value for money, would definitely come again."</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="border rounded p-3" style="border-color: #a91c4c;">
+                                        <p><strong>Emma W.</strong> ⭐⭐⭐⭐⭐ "A five-star experience! Can’t wait to visit again."</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#reviewCarousel" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#reviewCarousel" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Location Tab -->
+                    <div class="tab-pane fade" id="map-pane">
+                        <h5><i class="bi bi-map-fill"></i> Location & Attractions</h5>
+                        <iframe class="w-100 border rounded" height="300"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31686.858995324632!2d79.8462532528029!3d6.927078446155448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2592335714f7d%3A0xe8b6e6746f923c0e!2sCinnamon%20Life!5e0!3m2!1sen!2slk!4v1700000000000"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Booking Sidebar -->
+        <div class="col-lg-4">
+          <div class="booking-sidebar p-4 border rounded shadow-lg bg-light position-sticky" style="top: 20px;">
+              <h3 class="mb-3"><i class="bi bi-calendar-check"></i>Book Your Stay</h3>
+              <form>
+                  <div class="mb-3">
+                      <label for="checkIn" class="form-label">Check-In Date</label>
+                      <input type="date" class="form-control" id="checkIn">
+                  </div>
+                  <div class="mb-3">
+                      <label for="checkOut" class="form-label">Check-Out Date</label>
+                      <input type="date" class="form-control" id="checkOut">
+                  </div>
+                  <div class="mb-3">
+                      <label for="roomSelect" class="form-label">Select Room</label>
+                      <select class="form-select" id="roomSelect">
+                          <option selected>Choose a room...</option>
+                          <option value="1">Standard Room - $120</option>
+                          <option value="2">Deluxe Room - $150</option>
+                          <option value="3">Suite - $200</option>
+                      </select>
+                  </div>
+                  <button type="button" class="btn btn-warning w-100" onclick="window.location.href='book.html';">
+                    ✔ Book Now
+                </button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Bootstrap JS (Make sure it's included) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<br><br>
+ <!-- Footer Section -->
+<footer class="text-white py-4" style="background: #8E163E;">
+    <div class="container">
+      <div class="row">
+        <!-- Quick Links Section -->
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-house-door-fill me-2"></i> Stays</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-airplane-fill me-2"></i> Flights</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-car-front-fill me-2"></i> Car Rentals</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-train-freight-front-fill me-2"></i> Trains</a></li>
+          </ul>
+        </div>
+        
+        <!-- Support Section -->
+        <div class="col-md-3">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-info-circle-fill me-2"></i> About Us</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-question-circle-fill me-2"></i> Help Center</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-envelope-fill me-2"></i> Contact Us</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-chat-dots-fill me-2"></i> FAQ</a></li>
+          </ul>
+        </div>
+        
+        <!-- Social Media Section -->
+        <div class="col-md-3">
+          <h5>Follow Us</h5>
+          <div class="d-flex">
+            <a href="#" class="text-white text-decoration-none me-3 fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white text-decoration-none me-3 fs-4"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white text-decoration-none me-3 fs-4"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white text-decoration-none fs-4"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="bg-light">
+      <p class="text-center mb-0">&copy; Greenchip Tech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

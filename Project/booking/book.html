@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking & Payment - Booking.con</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="book.css">
+</head>
+<body>
+  <!-- HEADER (Provided) -->
+  <div class="container-fluid py-3" style="background-color: #a91c4c;">
+    <div class="d-flex justify-content-between align-items-center p-3">
+      <!-- Logo -->
+      <img src="img/Assets/Book_Sri_Lanka.net_Logo.jpeg" alt="Logo" style="height: 200px; width: auto;">
+      <!-- Toggle Button -->
+      <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" id="menuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              ☰ Menu
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuButton">
+              <li><a class="dropdown-item" href="index.html">Home</a></li>
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOKING & PAYMENT CONTENT -->
+  <div class="container my-4">
+    <!-- Progress Header -->
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">BookingSL.net</h2>
+      <p class="progress-steps">
+        Progress: <span class="active-step">1. Select</span> → 
+        <span class="active-step">2. Payment</span> → 3. Confirm
+      </p>
+    </div>
+    
+    <div class="container mt-5">
+      <div class="row g-4">
+          <!-- Left Container (Payment Section) -->
+          <div class="col-md-6">
+              <div class="outlined">
+                  <h4 class="text-center" style="color: #a91c4c;">Payment</h4>
+                  <div class="card p-3 shadow-sm">
+                      <div class="mb-3">
+                          <label for="cardNumber" class="form-label">Card Number</label>
+                          <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                      </div>
+                      <div class="row g-3 align-items-end">
+                          <div class="col-md-6">
+                              <label for="expiry" class="form-label">Expiry Date</label>
+                              <input type="text" class="form-control" id="expiry" placeholder="MM/YY" required>
+                          </div>
+                          <div class="col-md-3">
+                              <label for="cvv" class="form-label">CVV</label>
+                              <input type="text" class="form-control" id="cvv" placeholder="123" required>
+                          </div>
+                          <div class="col-md-3 text-center">
+                              <label class="form-label d-block">Payment Options</label>
+                              <i class="bi bi-credit-card-2-front-fill fs-2 text-primary" title="Visa"></i>
+                              <i class="bi bi-credit-card fs-2 text-warning" title="Mastercard"></i>
+                          </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary w-100 mt-3">Pay Now</button>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Right Container (Booking Form) -->
+          <div class="col-md-6">
+              <div class="outlined text-right">
+                  <h4 class="text-center" style="color: #a91c4c;">Booking Details</h4>
+                  <form id="bookingForm">
+                      <!-- Guest Details -->
+                      <div class="mb-4">
+                          <h5 class="highlighted">Guest Details</h5>
+                          <div class="row g-3">
+                              <div class="col-md-4 ms-auto">
+                                  <label for="guestName" class="form-label">Name</label>
+                                  <input type="text" class="form-control text-end" id="guestName" placeholder="Your Name" required>
+                              </div>
+                              <div class="col-md-4 ms-auto">
+                                  <label for="guestEmail" class="form-label">Email</label>
+                                  <input type="email" class="form-control text-end" id="guestEmail" placeholder="you@example.com" required>
+                              </div>
+                              <div class="col-md-4 ms-auto">
+                                  <label for="guestPhone" class="form-label">Phone</label>
+                                  <input type="tel" class="form-control text-end" id="guestPhone" placeholder="123-456-7890" required>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <!-- Room & Date Summary -->
+                      <div class="mb-4">
+                          <h5 class="highlighted">Room &amp; Date Summary</h5>
+                          <ul class="list-group text-end">
+                              <li class="list-group-item">Room: <strong>Deluxe Room</strong></li>
+                              <li class="list-group-item">Check-In: <strong>2025-03-01</strong></li>
+                              <li class="list-group-item">Check-Out: <strong>2025-03-05</strong></li>
+                              <li class="list-group-item">Total Price: <strong>$600</strong></li>
+                          </ul>
+                      </div>
+  
+                      <!-- Booking Button -->
+                      <button type="submit" class="btn btn-success w-100">Confirm Booking</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+   </div>
+
+   <br>
+   <br>
+  </div>
+  <!-- FOOTER (Provided) -->
+  <footer class="text-white py-4" style="background: #8E163E;">
+    <div class="container">
+      <div class="row">
+        <!-- Quick Links Section -->
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-house-door-fill me-2"></i> Stays</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-airplane-fill me-2"></i> Flights</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-car-front-fill me-2"></i> Car Rentals</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-train-freight-front-fill me-2"></i> Trains</a></li>
+          </ul>
+        </div>
+        
+        <!-- Support Section -->
+        <div class="col-md-3">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-info-circle-fill me-2"></i> About Us</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-question-circle-fill me-2"></i> Help Center</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-envelope-fill me-2"></i> Contact Us</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-chat-dots-fill me-2"></i> FAQ</a></li>
+          </ul>
+        </div>
+        
+        <!-- Social Media Section -->
+        <div class="col-md-3">
+          <h5>Follow Us</h5>
+          <div class="d-flex">
+            <a href="#" class="text-white text-decoration-none me-3 fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white text-decoration-none me-3 fs-4"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white text-decoration-none me-3 fs-4"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white text-decoration-none fs-4"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="bg-light">
+      <p class="text-center mb-0">&copy; Greenchip Tech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Simple JS to handle form submission and show confirmation -->
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Here you would add your payment processing logic
+      // For now, simply hide the form card and show the confirmation section
+      this.parentElement.classList.add('d-none');
+      document.getElementById('confirmationSection').classList.remove('d-none');
+    });
+  </script>
+</body>
+</html>

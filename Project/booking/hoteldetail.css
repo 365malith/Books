@@ -1,0 +1,80 @@
+/* Logo Styling */
+.logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  /* Breadcrumb */
+  .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+  }
+  
+  /* Carousel Image Styling */
+  .carousel-inner img {
+    object-fit: cover;
+    height: 500px;
+  }
+  
+  /* Hotel Overview Section */
+  .hotel-overview h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .hotel-overview p {
+    margin-bottom: 0.75rem;
+  }
+  .rating i {
+    font-size: 1.2rem;
+  }
+  
+  /* Tab Navigation */
+  .nav-tabs .nav-link {
+    color: #555;
+  }
+  .nav-tabs .nav-link.active {
+    color: #000;
+    font-weight: bold;
+    border-color: #ddd #ddd #fff;
+  }
+  
+  /* Booking Sidebar */
+  .booking-sidebar {
+    background-color: #f9f9f9;
+  }
+  
+  /* Footer Styling */
+  .footer a {
+    text-decoration: none;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Additional Spacing and Border Adjustments */
+  .hotel-overview, .booking-sidebar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .breadcrumb-link {
+    text-decoration: none;
+    color: #343a40; /* Dark color */
+    transition: all 0.3s ease-in-out;
+}
+
+.breadcrumb-link:hover {
+    color: #a91c4c !important; /* Theme color on hover */
+    text-decoration: underline;
+}
+
+.breadcrumb-active {
+    background-color: #a91c4c;
+    color: white !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.breadcrumb-active:hover {
+    background-color: #800f34; /* Darker shade on hover */
+}

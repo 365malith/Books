@@ -1,0 +1,204 @@
+/*Css for stayyyyyyy>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.search-section {
+    background-color: var(--theme-color);
+    padding: 20px 0;
+  }
+  .search-form .search-input {
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+  }
+  .search-form .btn {
+    border-radius: 0;
+  }
+  
+  /* Filter Bar */
+  .filter-bar {
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .filter-bar h5 {
+    color: var(--theme-color);
+  }
+  
+  /* Hotel Cards */
+  .hotel-card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  .hotel-card:hover {
+    transform: scale(1.02);
+  }
+  .hotel-card .card-body {
+    background-color: #f8f9fa;
+  }
+  .hotel-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--theme-color);
+    color: #fff;
+  }
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    color: #f8f9fa;
+  }
+  /* Define the theme color */
+  :root {
+    --theme-color: #8E163E;
+  }
+  
+  /* Custom Navigation Bar */
+  .custom-navbar {
+    background-color: var(--theme-color);
+    padding: 10px 0;
+  }
+  .custom-navbar .logo-img {
+    width: 50px;  /* Adjust size as needed */
+    height: auto;
+  }
+  
+  /* Pocket Navigation Styling */
+  .pocket-nav {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  .pocket-nav .nav-link {
+    color: var(--theme-color);
+    font-weight: 500;
+  }
+  .pocket-nav .nav-link:hover {
+    color: #a91c4c;
+  }
+  
+  /* Video Background */
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  #bgVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Hotel Card Rating Styles */
+  .hotel-card .rating i {
+    font-size: 1.2rem;
+  }
+  
+  /* Additional Styling for Hotel Cards */
+  .hotel-card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  .hotel-card:hover {
+    transform: scale(1.02);
+  }
+  
+/*bot chat*/
+/* Chat Icon (Fixed at Bottom Right) */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #8E163E;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;       /* Slightly bigger */
+  height: 60px;      /* Slightly bigger */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1050;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.chat-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Increase the icon size using Bootstrap's font-size utility via CSS */
+.chat-icon i {
+  font-size: 2rem;  /* Makes the megaphone icon larger */
+}
+
+/* Chat Widget Container */
+.chat-widget {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  max-height: 400px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  z-index: 1050;
+  overflow: hidden;
+}
+
+/* Chat Header */
+.chat-header {
+  background-color: #8E163E;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Chat Body */
+.chat-body {
+  padding: 10px;
+  flex: 1;
+  overflow-y: auto;
+  background-color: #f1f1f1;
+}
+
+.chat-messages {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Chat Footer */
+.chat-footer {
+  padding: 10px;
+  display: flex;
+  background-color: #eee;
+}
+
+.chat-footer input {
+  flex: 1;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.chat-footer button {
+  border-radius: 4px;
+}
+
+/* Utility: d-none class */
+.d-none {
+  display: none !important;
+}

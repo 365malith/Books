@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hotel Listings - Booking.con</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="stay.css" />
+</head>
+<body>
+<!-- Container with Background Color -->
+<div class="container-fluid py-3" style="background-color: #a91c4c;">
+  <div class="d-flex justify-content-between align-items-center px-3">
+      <!-- Logo on the Left -->
+      <img src="img/Assets/Book_Sri_Lanka.net_Logo.jpeg" alt="Logo" style="height: 200px; width: auto;">
+        <!-- Centered Search Section -->
+  <div class="d-flex flex-column align-items-center mt-3 animate__animated animate__fadeInUp">
+    <!-- Destination Input -->
+    <div class="w-500 mb-2">
+        <input type="text" class="form-control" placeholder="Where are you going?">
+    </div>
+    
+    <!-- Check-in, Check-out, Guests -->
+    <div class="d-flex justify-content-center w-200 gap-2 mb-2">
+        <input type="date" class="form-control" placeholder="Check-in">
+        <input type="date" class="form-control" placeholder="Check-out">
+        <input type="number" class="form-control" placeholder="Guests">
+    </div>
+    
+    <!-- Search Button -->
+    <div class="w-25">
+        <button type="submit" class="btn btn-warning w-100">Search</button>
+      </div>
+    </div>
+      <!-- Toggle Button on the Right -->
+      <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" id="menuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              ☰ Menu
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuButton">
+              <li><a class="dropdown-item" href="#">Home</a></li>
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="video-background">
+    <video autoplay muted loop id="bgVideo">
+      <source src="img/Assets/bookingsrilanka.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <!-- Main Content -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Filter Bar (Left Column) -->
+      <aside class="col-lg-3">
+        <div class="filter-bar p-3">
+          <h5>Filters</h5>
+          <hr>
+          <!-- Price Margins Filter -->
+          <div class="mb-3">
+            <label for="minPrice" class="form-label">Min Price ($)</label>
+            <input type="number" id="minPrice" class="form-control" placeholder="0">
+          </div>
+          <div class="mb-3">
+            <label for="maxPrice" class="form-label">Max Price ($)</label>
+            <input type="number" id="maxPrice" class="form-control" placeholder="500">
+          </div>
+          <!-- Star Rating Filter -->
+          <div class="mb-3">
+            <label class="form-label">Star Rating</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="5" id="star5">
+              <label class="form-check-label" for="star5">
+                <i class="bi bi-star-fill text-warning"></i> 5 Stars
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="4" id="star4">
+              <label class="form-check-label" for="star4">
+                <i class="bi bi-star-fill text-warning"></i> 4 Stars
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="3" id="star3">
+              <label class="form-check-label" for="star3">
+                <i class="bi bi-star-fill text-warning"></i> 3 Stars
+              </label>
+            </div>
+          </div>
+          <!-- Amenities Filter -->
+          <div class="mb-3">
+            <label class="form-label">Amenities</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="wifi">
+              <label class="form-check-label" for="wifi">
+                <i class="bi bi-wifi"></i> Free Wi-Fi
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pool">
+              <label class="form-check-label" for="pool">
+                <i class="bi bi-droplet-half"></i> Swimming Pool
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="spa">
+              <label class="form-check-label" for="spa">
+                <i class="bi bi-heart"></i> Spa
+              </label>
+            </div>
+          </div>
+          <!-- Search Button in Filter Bar -->
+          <button class="btn btn-primary w-100">Apply Filters</button>
+        </div>
+      </aside>
+      
+      <!-- Hotel Cards (Right Column) -->
+      <section class="col-lg-9">
+        <div class="hotel-cards">
+          <!-- Hotel Card 1 -->
+          <div class="card mb-4 hotel-card">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="img/Assets/Grand Oriental Hotel.jpg" class="img-fluid rounded-start" alt="Hotel Image">
+                <div class="p-2">
+                  <p class="mb-0"><strong>Hotel Royale</strong></p>
+                  <p class="mb-0">Colombo, Sri Lanka</p>
+                </div>
+              </div>
+              <div class="col-md-7 d-flex align-items-center">
+                <div class="card-body">
+                  <h5 class="card-title">Hotel Speciality</h5>
+                  <p class="card-text">Luxury experience with exquisite dining, spa facilities, and breathtaking city views.</p>
+                  <a href="hoteldetail.html" class="btn btn-outline-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Example Hotel Card with Star Rating -->
+<div class="card hotel-card mb-4">
+  <div class="row g-0">
+    <!-- Left: Hotel Image and Brief Description -->
+    <div class="col-md-5">
+      <img src="img/Assets/cinnamon-lakeside-colombo.jpg" class="img-fluid rounded-start" alt="Hotel Image">
+      <div class="p-2">
+        <p class="mb-0"><strong>cinnamon-lakeside-colombo</strong></p>
+        <p class="mb-0">Colombo, Sri Lanka</p>
+      </div>
+    </div>
+    <!-- Right: Hotel Speciality and Star Rating -->
+    <div class="col-md-7 d-flex align-items-center">
+      <div class="card-body">
+        <h5 class="card-title">Hotel Speciality</h5>
+        <p class="card-text">
+          Enjoy a luxurious stay with premium amenities and exceptional service.<br>
+          <span class="rating">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star text-muted"></i>
+          </span>
+        </p>
+        <p class="card-text"><strong>$120</strong> per night</p>
+        <a href="#" class="btn btn-outline-primary">View Details</a>
+      </div>
+    </div>
+  </div>
+</div>
+          <!-- Hotel Card 3 -->
+          <div class="card mb-4 hotel-card">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="img/Assets/cinnamon_grand.jpg" class="img-fluid rounded-start" alt="Hotel Image">
+                <div class="p-2">
+                  <p class="mb-0"><strong>Tropical Paradise</strong></p>
+                  <p class="mb-0">colombo, Sri Lanka</p>
+                </div>
+              </div>
+              <div class="col-md-7 d-flex align-items-center">
+                <div class="card-body">
+                  <h5 class="card-title">Hotel Speciality</h5>
+                  <p class="card-text">Immerse in nature with modern comforts set against lush Kandy landscapes.</p>
+                  <a href="#" class="btn btn-outline-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hotel Card 4 -->
+          <div class="card mb-4 hotel-card">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="img/Assets/Grand Oriental Hotel.jpg" class="img-fluid rounded-start" alt="Hotel Image">
+                <div class="p-2">
+                  <p class="mb-0"><strong>Ocean View Inn</strong></p>
+                  <p class="mb-0">Negombo, Sri Lanka</p>
+                </div>
+              </div>
+              <div class="col-md-7 d-flex align-items-center">
+                <div class="card-body">
+                  <h5 class="card-title">Hotel Speciality</h5>
+                  <p class="card-text">Enjoy breathtaking ocean vistas, modern amenities, and exceptional coastal service.</p>
+                  <a href="#" class="btn btn-outline-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hotel Card 5 -->
+          <div class="card mb-4 hotel-card">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="img/Assets/heritance-hotels-ahungalla-5-1.jpg" class="img-fluid rounded-start" alt="Hotel Image">
+                <div class="p-2">
+                  <p class="mb-0"><strong>Heritage Hotel</strong></p>
+                  <p class="mb-0">heritance-hotels-ahungalla, Sri Lanka</p>
+                </div>
+              </div>
+              <div class="col-md-7 d-flex align-items-center">
+                <div class="card-body">
+                  <h5 class="card-title">Hotel Speciality</h5>
+                  <p class="card-text">A perfect blend of rich culture and modern comforts in a heritage setting.</p>
+                  <a href="#" class="btn btn-outline-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+<!-- Footer Section -->
+<footer class="text-white py-4" style="background: #8E163E;">
+  <div class="container">
+    <div class="row">
+      <!-- Quick Links Section -->
+      <div class="col-md-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-house-door-fill me-2"></i> Stays</a></li>
+          <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-airplane-fill me-2"></i> Flights</a></li>
+          <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-car-front-fill me-2"></i> Car Rentals</a></li>
+          <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-train-freight-front-fill me-2"></i> Trains</a></li>
+        </ul>
+      </div>
+      
+      <!-- Support Section -->
+      <div class="col-md-3">
+        <h5>Support</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-info-circle-fill me-2"></i> About Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-question-circle-fill me-2"></i> Help Center</a></li>
+          <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-envelope-fill me-2"></i> Contact Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-chat-dots-fill me-2"></i> FAQ</a></li>
+        </ul>
+      </div>
+      
+      <!-- Social Media Section -->
+      <div class="col-md-3">
+        <h5>Follow Us</h5>
+        <div class="d-flex">
+          <a href="#" class="text-white text-decoration-none me-3 fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white text-decoration-none me-3 fs-4"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white text-decoration-none me-3 fs-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white text-decoration-none fs-4"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <hr class="bg-light">
+    <p class="text-center mb-0">&copy; Greenchip Tech. All rights reserved.</p>
+  </div>
+</footer>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Chat Icon (Loudspeaker Icon) -->
+<div id="chatIcon" class="chat-icon">
+  <i class="bi bi-megaphone-fill"></i>
+</div>
+
+<!-- Chat Widget -->
+<div id="chatWidget" class="chat-widget d-none">
+  <div class="chat-header">
+    <span>Ask from Malith</span>
+    <button id="closeChat" type="button" class="btn-close btn-close-white"></button>
+  </div>
+  <div class="chat-body">
+    <div id="chatMessages" class="chat-messages">
+      <!-- Chat messages will appear here -->
+    </div>
+  </div>
+  <div class="chat-footer">
+    <input type="text" id="chatInput" class="form-control" placeholder="Type your message...">
+    <button id="sendChat" class="btn btn-primary ms-2">Send</button>
+  </div>
+</div>
+
+<script src="action.js"></script>
+
+</body>
+</html>
