@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>booksrilanka.net</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- Optional: Animate.css for additional animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+ <!-- Container with Background Color -->
+<div class="container-fluid py-3" style="background-color: #a91c4c;">
+  <div class="d-flex justify-content-between align-items-center px-3">
+      <!-- Logo on the Left -->
+      <img src="img/Assets/Book_Sri_Lanka.net_Logo.jpeg" alt="Logo" style="height: 200px; width: auto;">
+      
+      <!-- Toggle Button on the Right -->
+      <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="menuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              ☰ Menu 
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuButton">
+              <li><a class="dropdown-item" href="#">Home</a></li>
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+  
+  <!-- Centered Content -->
+  <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center">
+      <!-- Title and Subtitle with animations -->
+      <h1 class="display-4 animate__animated animate__fadeInDown">Find Your Perfect Stay</h1>
+      <p class="lead animate__animated animate__fadeInUp">Discover the best hotels, resorts, and more</p>
+      
+     <!-- Search Section -->
+    <div class="d-flex flex-column align-items-center mt-3 animate__animated animate__fadeInUp">
+      <!-- Destination Input with Autocomplete -->
+      <div class="search-container w-50 mb-2 position-relative">
+          <input type="text" id="searchInput" class="form-control" placeholder="Where are you going?" onkeyup="showSuggestions()">
+          <div id="suggestions" class="list-group position-absolute w-100"></div>
+      </div>
+
+      <!-- Check-in, Check-out, Guests -->
+      <div class="d-flex justify-content-center w-200 gap-2 mb-2">
+          <input type="date" class="form-control" placeholder="Check-in">
+          <input type="date" class="form-control" placeholder="Check-out">
+          <input type="number" class="form-control" placeholder="Guests">
+      </div>
+
+      <!-- Search Button -->
+      <div class="w-25">
+          <button type="button" class="btn btn-warning w-100" onclick="redirectToDetails()">Search</button>
+      </div>
+  </div>
+
+  <script src="action.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Navigation Menu -->
+    <nav class="py-3">
+      <div class="container d-flex justify-content-center">
+          <ul class="nav">
+              <li class="nav-item">
+                  <a class="btn btn-dark d-flex align-items-center mx-2" href="stay.html">
+                      <i class="bi bi-house-door me-2"></i> Stays
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="btn btn-dark d-flex align-items-center mx-2" href="#">
+                      <i class="bi bi-airplane me-2"></i> Flights
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="btn btn-dark d-flex align-items-center mx-2" href="#">
+                      <i class="bi bi-car-front me-2"></i> Car Rentals
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="btn btn-dark d-flex align-items-center mx-2" href="#">
+                    <i class="bi bi-train-front"></i> Train 
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="btn btn-dark d-flex align-items-center mx-2" href="#">
+                      <i class="bi bi-taxi-front me-2"></i> Airport Taxis
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  
+  </section>
+</div>
+
+  <!-- Why Choose Sri Lanka Section -->
+  <section class="why-sri-lanka py-5">
+    <div class="container">
+        <div class="row align-items-stretch">
+            <!-- Left Side: Infinite Playing Video -->
+            <div class="col-md-7">
+                <div class="card shadow-lg border border-3" style="border-color: #a91c4c;">
+                    <video class="w-100 h-100" autoplay loop muted>
+                        <source src="img/Assets/bookingsrilanka.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <!-- Right Side: Information Boxes -->
+            <div class="col-md-5">
+                <div class="card shadow-lg border border-3 p-3" style="border-color: #a91c4c;">
+                    <h3 class="text-center mb-3"><i class="bi bi-globe"></i> Why Choose Sri Lanka?</h3>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="p-3 text-center border border-2 rounded" style="border-color: #a91c4c;">
+                                <i class="bi bi-geo-alt-fill fs-3"></i>
+                                <p class="mt-2">Preserved Cultural Heritage  </p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 text-center border border-2 rounded" style="border-color: #a91c4c;">
+                                <i class="bi bi-shield-lock-fill fs-3"></i>
+                                <p class="mt-2">Secure fun for all </p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 text-center border border-2 rounded" style="border-color: #a91c4c;">
+                                <i class="bi bi-hand-thumbs-up-fill fs-3"></i>
+                                <p class="mt-2">Friendly Culture</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 text-center border border-2 rounded" style="border-color: #a91c4c;">
+                                <i class="bi bi-building-check fs-3"></i>
+                                <p class="mt-2">Natural Topical Vibes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+  
+
+  <!-- Trending Destinations Section -->
+<section class="trending-destinations py-5">
+  <div class="container">
+    <h2 class="mb-4">Trending destinations</h2>
+    <div class="row g-4">
+      <!-- Destination Card -->
+      <div class="col-md-4">
+        <a href="https://example.com/kandy" target="_blank" class="destination-card">
+          <img src="img/Assets/AdobeStock_364951258.jpeg" alt="Kandy">
+          <div class="overlay">
+            <h3>Kandy 🇱🇰</h3>
+          </div>
+        </a>
+      </div>
+      <!-- Destination Card -->
+      <div class="col-md-4">
+        <a href="https://example.com/colombo" target="_blank" class="destination-card">
+          <img src="img/Assets/colombo.jpeg" alt="Colombo">
+          <div class="overlay">
+            <h3>Colombo 🇱🇰</h3>
+          </div>
+        </a>
+      </div>
+      <!-- Destination Card -->
+      <div class="col-md-4">
+        <a href="https://example.com/nuwara-eliya" target="_blank" class="destination-card">
+          <img src="img/Assets/Grand Neuwara Eliya.jpg" alt="nuwara-eliya ">
+          <div class="overlay">
+            <h3>nuwara-eliya</h3>
+          </div>
+        </a>
+      </div>
+      <!-- Destination Card -->
+      <div class="col-md-4">
+        <a href="https://example.com/dubai" target="_blank" class="destination-card">
+          <img src="img/Assets/radison blu.jpg" alt="Galle">
+          <div class="overlay">
+            <h3>Galle</h3>
+          </div>
+        </a>
+      </div>
+      <!-- Destination Card -->
+      <div class="col-md-4">
+        <a href="https://example.com/ella" target="_blank" class="destination-card">
+          <img src="img/Assets/Ella hotels.jpeg" alt="Ella">
+          <div class="overlay">
+            <h3>Ella 🇱🇰</h3>
+          </div>
+        </a>
+      </div>
+       <!-- Destination Card -->
+       <div class="col-md-4">
+        <a href="https://example.com/nuwara-eliya" target="_blank" class="destination-card">
+          <img src="img/Assets/Marino_Beach_Colombo.jpg" alt="Marino beach">
+          <div class="overlay">
+            <h3>Marino beach</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container attractions-section">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+      <div>
+          <h2 class="fw-bold">Popular attractions in Colombo</h2>
+          <p class="text-muted">Experience everything this city has to offer</p>
+      </div>
+      <a href="#" class="text-primary see-all">See all attractions</a>
+  </div>
+
+  <div id="attractionsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <!-- Slide 1: Show 4 cards -->
+          <div class="carousel-item active">
+              <div class="row">
+                  <div class="col-md-3">
+                      <div class="flip-card">
+                          <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <img src="img/Assets/Modification 2/Lotus Tower.jpg" alt="Attraction 1">
+                              </div>
+                              <div class="flip-card-back">
+                                  <p>Lotus Tower</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="flip-card">
+                          <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <img src="img/Assets/Modification 2/Spa Day.jpg" alt="Attraction 2">
+                              </div>
+                              <div class="flip-card-back">
+                                  <p>Spa Day</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="flip-card">
+                          <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <img src="img/Assets/Modification 2/Pool day.jpg" alt="Attraction 3">
+                              </div>
+                              <div class="flip-card-back">
+                                  <p>Pool Day</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="flip-card">
+                          <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <img src="img/Assets/Modification 2/Kingsbury.jpg" alt="Attraction 4">
+                              </div>
+                              <div class="flip-card-back">
+                                  <p>Kingsbury Hotel </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 2: Show 5th card -->
+          <div class="carousel-item">
+              <div class="row">
+                  <div class="col-md-3 offset-md-4"> <!-- Center the 5th card -->
+                      <div class="flip-card">
+                          <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <img src="https://via.placeholder.com/300" alt="Attraction 5">
+                              </div>
+                              <div class="flip-card-back">
+                                  <p>🏝️ Relax at Colombo's Beaches</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+      <!-- Bigger & Centered Carousel Controls -->
+      <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#attractionsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#attractionsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+      </button>
+  </div>
+</div>
+
+<br><br>
+  
+
+
+<!-- Footer Section -->
+<footer class="text-white py-4" style="background: #8E163E;">
+    <div class="container">
+      <div class="row">
+        <!-- Quick Links Section -->
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-house-door-fill me-2"></i> Stays</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-airplane-fill me-2"></i> Flights</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-car-front-fill me-2"></i> Car Rentals</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-train-freight-front-fill me-2"></i> Trains</a></li>
+          </ul>
+        </div>
+        
+        <!-- Support Section -->
+        <div class="col-md-3">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-info-circle-fill me-2"></i> About Us</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-question-circle-fill me-2"></i> Help Center</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-envelope-fill me-2"></i> Contact Us</a></li>
+            <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-chat-dots-fill me-2"></i> FAQ</a></li>
+          </ul>
+        </div>
+        
+        <!-- Social Media Section -->
+        <div class="col-md-3">
+          <h5>Follow Us</h5>
+          <div class="d-flex">
+            <a href="#" class="text-white text-decoration-none me-3 fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white text-decoration-none me-3 fs-4"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white text-decoration-none me-3 fs-4"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white text-decoration-none fs-4"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="bg-light">
+      <p class="text-center mb-0">&copy; Greenchip Tech. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="action.js"></script>
+
+</body>
+</html>
